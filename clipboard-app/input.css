@@ -25,7 +25,7 @@ body {
 }
 
 .section-container {
-    @apply max-w-6xl px-10 pt-16 text-center mx-auto;
+    @apply max-w-6xl px-10 text-center mx-auto;
 }
 
 .section-content {
