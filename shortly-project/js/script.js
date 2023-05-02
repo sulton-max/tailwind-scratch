@@ -2,6 +2,17 @@ const linkForm = document.getElementById('link-form');
 const input = document.getElementById('link-input');
 const errorMessage = document.getElementById('error-message');
 
+const menuButton = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuButton.addEventListener('click', () => toggleMenu());
+
+function toggleMenu() {
+  menuButton.classList.toggle('open');
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('flex');
+}
+
 linkForm.addEventListener('submit', handleSubmit);
 
 function validURL(str) {
